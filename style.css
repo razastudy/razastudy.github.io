@@ -299,6 +299,8 @@ font-family: 'Roboto Slab', serif;
   margin: 40px 0;
   font-weight: 500;
   border: 1px solid var(--surface-primary);
+  transition: ease-out 0.5s;
+
 }
 .readmore_btn:hover {
   border: 1px solid var(--surface-primary);
@@ -312,6 +314,10 @@ font-family: 'Roboto Slab', serif;
   margin-bottom: 25px;
 }
 .body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 50px;
   margin: 50px 0;
 }
 .frame {
@@ -326,10 +332,21 @@ font-family: 'Roboto Slab', serif;
   width: 100%;
 }
 .frame > h6 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-align: start;
   margin: 5px 0;
   padding: 10px 0 5px 0;
   font-family: "Noto Serif", sans-serif;
+}
+.frame > h6 > span{
+  text-align: center;
+}
+.frame > p {
+  padding: 4px 0;
+  margin: 2px 0;
+}
+.courses_btn {
+  margin: 16px auto;
+  width: 100%;
 }
