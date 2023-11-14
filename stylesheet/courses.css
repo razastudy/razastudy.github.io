@@ -1,0 +1,9 @@
+@import url(../stylesheet/style.css);
+
+.header {
+  /* background-color: var(--surface-primary); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  no-repeat center/100% url(../Resources/courses.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
