@@ -1,9 +1,84 @@
 @import url(../stylesheet/style.css);
 
 .header {
-  /* background-color: var(--surface-primary); */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  no-repeat center/100% url(../Resources/courses.jpg);
+  position: relative;
+  background: linear-gradient(261deg, rgba(50, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    no-repeat center/100% url(../Resources/courses.jpg);
   object-fit: cover;
   background-size: cover;
+}
+.overlay_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.overlay_text > h2 {
+  font-size: 3rem;
+  color: var(--black);
+  font-family: "Noto serif", sans-serif;
+  font-weight: 600;
+  -webkit-text-stroke: 1px var(--text-primary-white);
+}
+.overlay_text > p {
+  font-size: 1.2rem;
+  font-family: "Noto Serif", sans-serif;
+  color: var(--text-primary-white);
+  width: 50%;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* CURVE DESIGN  */
+.custom-shape-divider-bottom-1700026119 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1700026119 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 82px;
+}
+
+.custom-shape-divider-bottom-1700026119 .shape-fill {
+  fill: #ffffff;
+}
+
+.title > h2 {
+  text-align: left;
+}
+
+/* COURSES  */
+.courses_body{
+  display: grid;
+  gap: 40px;
+  margin-top: 50px;
+}
+.pages_course {
+  background-color: var(--surface-primary);
+  color: var(--text-primary-white);
+  padding: 30px;
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.35); */
+}
+.pages_course > h3 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: var(--surface-primary-yellow);
+}
+.pages_course > p {
+  font-family: "Noto serif", sans-serif;
+  font-weight: 300;
+  text-align: justify;
 }
