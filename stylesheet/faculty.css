@@ -1,8 +1,12 @@
 @import url(../stylesheet/style.css);
-
+@import url(courses.css);
 .header {
   object-fit: cover;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     no-repeat center/100% url(../Resources/faculty.jpg);
   background-size: cover;
+}
+.faculty_overlay > h2 {
+  color: var(--text-primary-white);
+  -webkit-text-stroke: 1px var(--black);
 }
