@@ -338,7 +338,7 @@ font-family: 'Roboto Slab', serif;
 .box {
   width: 270px;
   background-color: var(--gray-50);
-  box-shadow: 0px 1px 4px 2px #0000003d;
+  box-shadow: 3px 3px 4px 0px #0000003d;
   text-align: justify;
   padding: 30px;
   border-radius: 4px;
@@ -564,9 +564,10 @@ font-family: 'Roboto Slab', serif;
 .admission_content {
   display: flex;
   justify-content: space-around;
+  gap: 140px;
 }
 .course_body {
-  width: 50%;
+  width: 40%;
   display: grid;
   grid-template-columns: repeat(2, 172px);
   gap: 25px 100px;
@@ -598,7 +599,7 @@ font-family: 'Roboto Slab', serif;
 .admission_right {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
 }
 .admission_right > h4 {
   font-size: 2rem;
@@ -885,35 +886,6 @@ font-family: 'Roboto Slab', serif;
 
 /* RESPONSIVENESS  */
 
-/* @media only screen and (max-width: 1240px) {
-  .images {
-    grid-template-columns: repeat(6, 175px);
-  }
-}
-@media only screen and (max-width: 1050px) {
-  .images {
-    grid-template-columns: repeat(5, 150px);
-    gap: 15px;
-  }
-  .image {
-    width: 150px;
-    height: 160px;
-  }
-}
-@media only screen and (max-width: 840px) {
-  .images {
-    grid-template-columns: repeat(4, 175px);
-  }
-} */
-
-/* FOR PHONE  */
-/* @media only screen and (max-width: 575px) {
-}
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-}
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-} */
-
 /* LARGE DESKTOP */
 @media (min-width: 1201px) and (max-width: 1400px) {
   .sec_spacing {
@@ -1125,6 +1097,9 @@ font-family: 'Roboto Slab', serif;
     text-align: center;
   }
 
+  .body {
+    gap: 20px;
+  }
   .frame > img {
     height: 170px;
   }
@@ -1137,19 +1112,34 @@ font-family: 'Roboto Slab', serif;
     font-size: 15px;
   }
   .bigger {
-    width: 280px;
-    height: 170px;
+    width: 230px;
+    height: 135px;
   }
   .combine {
-    gap: 40px;
+    gap: 25px;
   }
   .bottom,
   .top {
-    width: 230px;
-    height: 125px;
+    width: 200px;
+    height: 100px;
   }
   .body_left {
     width: 45%;
+  }
+  .body_left > h4 {
+    font-size: 26px;
+  }
+  .list > ol > li {
+    font-size: 15px;
+  }
+  .user {
+    width: 130px;
+  }
+  .user_picture {
+    height: 130px;
+  }
+  .ranker_content {
+    margin: 80px 0 50px;
   }
   .curious,
   .admission,
@@ -1157,23 +1147,344 @@ font-family: 'Roboto Slab', serif;
     padding: 50px 90px 80px 90px;
   }
   .admission_right > h4 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .reason_left > p,
   .admission_right > p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .course {
     width: 160px;
+  }
+  .course_body {
+    width: 55%;
+    gap: 15px 50px;
   }
   .image {
     width: 160px;
     height: 170px;
   }
+  .images_first_row div:nth-last-child(1),
+  .images_second_row div:nth-last-child(1) {
+    display: none;
+  }
   .instuctor {
     padding: 50px 80px;
   }
-  .footer_body {
-    padding-top: 30px;
+  .instuctor_content {
+    width: 75%;
   }
+  .img_body {
+    width: 35%;
+  }
+  .divider-img-812019 {
+    height: 50px;
+  }
+  .footer_body {
+    padding-top: 10px;
+  }
+  .map > iframe {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* TABLET  BIG SCREEN*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .sec_spacing {
+    margin: 60px;
+  }
+  .header {
+    padding: 35px 60px 0;
+    height: 500px;
+  }
+  .navbar > ul {
+    gap: 30px;
+  }
+  .navbar > a {
+    font-size: 24px;
+  }
+  .navbar > ul > li a {
+    font-size: 0.9rem;
+  }
+  .model > img {
+    width: 390px;
+    left: 0;
+  }
+  .bg > svg {
+    margin-left: 90px;
+    width: 235px;
+    height: 235px;
+  }
+  .content {
+    align-items: flex-start;
+  }
+
+  .left {
+    margin-top: 80px;
+    width: 45%;
+  }
+  .left > h1,
+  .title > h2 {
+    font-size: 20px;
+  }
+  .left > p {
+    font-size: 14px;
+    font-family: "Noto serif", sans-serif;
+  }
+  .custom-shape-divider-bottom-1699952607 svg {
+    height: 80px;
+  }
+
+  .info,
+  .demo {
+    width: 90px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info > p,
+  .demo > p {
+    font-size: 17px;
+    padding: 6px;
+  }
+  .qualified,
+  .total_students {
+    width: 110px;
+    height: 110px;
+  }
+  .total_students {
+    margin-top: -65px;
+  }
+  .qualified {
+    margin-left: 230px;
+    margin-top: -145px;
+  }
+  .stats_icon > i {
+    font-size: 1rem;
+  }
+  .stats_icon {
+    width: 30px;
+    height: 30px;
+    margin: 12px auto 0;
+  }
+  .stats_title > p {
+    font-size: 1.25rem;
+  }
+  .stats_desc > p {
+    font-size: 0.85rem;
+    margin: 0rem;
+  }
+  .scrolling {
+    margin-top: 70px;
+  }
+  .scrolling > marquee {
+    font-size: 1rem;
+    font-family: "Noto serif", sans-serif;
+  }
+  .reason_content {
+    display: grid;
+    gap: 50px;
+  }
+  .reason_right {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .reason_left {
+    width: 100%;
+  }
+  .box_left,
+  .box_right {
+    display: flex;
+    gap: 80px;
+  }
+  .box_right {
+    padding-top: 0;
+  }
+
+  .box {
+    width: 245px;
+    padding: 16px;
+  }
+  .box > h6 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .body {
+    gap: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 262px);
+  }
+  .frame > img {
+    height: 135px;
+  }
+  .frame > h6 {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+  }
+  .frame > p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .bigger {
+    width: 230px;
+    height: 135px;
+  }
+  .combine {
+    gap: 25px;
+  }
+  .bottom,
+  .top {
+    width: 200px;
+    height: 100px;
+  }
+  .body_left {
+    width: 100%;
+  }
+  .body_left > h4 {
+    font-size: 26px;
+  }
+  .curious_right {
+    display: none;
+  }
+  .list > ol > li {
+    font-size: 15px;
+  }
+  .user {
+    width: 100px;
+  }
+  .user_picture {
+    height: 100px;
+  }
+  .user_percentage {
+    width: 35px;
+    height: 35px;
+  }
+  .username > p,
+  .feedback_name {
+    font-size: 0.8rem;
+  }
+  .user_qualification > p {
+    font-size: 0.75rem;
+  }
+  .ranker_content {
+    margin: 80px 0 50px;
+  }
+  .curious,
+  .admission,
+  .instuctor {
+    padding: 50px 90px 80px 90px;
+  }
+  .admission_right > h4 {
+    font-size: 1.6rem;
+  }
+  .reason_left > p,
+  .admission_right > p {
+    font-size: 14px;
+  }
+  .course {
+    width: 160px;
+  }
+  .admission_content {
+    display: block;
+  }
+  .course_body {
+    width: 100%;
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    grid-template-columns: repeat(2, 160px);
+    margin-top: 20px;
+  }
+
+  .admission_right {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+  .dn {
+    display: none;
+  }
+  /* IMAGE GALLERY  */
+  .image {
+    width: 150px;
+    height: 160px;
+  }
+  .images {
+    margin: 50px 0 0 0;
+  }
+  .images_first_row div:nth-last-child(1),
+  .images_second_row div:nth-last-child(1) {
+    display: none;
+  }
+  .images_first_row div:nth-last-child(2),
+  .images_second_row div:nth-last-child(2) {
+    display: none;
+  }
+
+  /* INSTRUCTOR */
+  .instuctor {
+    padding: 50px 80px;
+  }
+  .instructor_content {
+    width: 80%;
+  }
+  /* .instructor_read_btn {
+    display: block;
+  } */
+  .instr_title {
+    font-size: 1.5rem;
+  }
+  .instr_desc {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .feedback_body {
+    gap: 50px;
+    margin: 70px 0;
+  }
+  .feedback_desc > p {
+    font-size: 0.85rem;
+  }
+  .img_body {
+    width: 35%;
+  }
+  .website-divider-container-812019 {
+    height: 70px;
+  }
+  .divider-img-812019 {
+    height: 50px;
+  }
+  .footer_body {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    /* padding-top: 40px; */
+    grid-template-columns: repeat(2, 250px);
+    gap: 60px 0;
+  }
+  .contact_info {
+    width: 250px;
+  }
+
+  .map > iframe {
+    height: 250px;
+    width: 250px;
+  }
+}
+/* TABLET SMALL SCREEN  */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/* PHONE  */
+@media (max-width: 575px) {
 }
