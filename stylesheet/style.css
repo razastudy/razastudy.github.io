@@ -1883,7 +1883,7 @@ font-family: 'Roboto Slab', serif;
   }
   .left > h1,
   .title > h2 {
-    font-size: 18px;
+    font-size: 1.25rem;
   }
   .left > p {
     font-size: 12px;
