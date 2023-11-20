@@ -1,8 +1,44 @@
-@import url(../stylesheet/style.css);
+/* @import url(../stylesheet/style.css); */
+@import url(faculty.css);
 
 .header {
   object-fit: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     no-repeat center/100% url(../Resources/gallery.jpg);
   background-size: cover;
+  height: 800px;
 }
+.images_body {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  grid-template-columns: repeat(5, 250px);
+  gap: 30px;
+}
+.image_body {
+  width: 220px;
+  height: 180px;
+  box-shadow: 6px 7px 10px #43434391;
+}
+.image_body > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--blue-300);
+}
+
+/* @media (min-width: 993px) and (max-width: 1200px) {
+  .header{
+    height: 560px;
+  }
+  .images_body {
+    grid-template-columns: repeat(4, 230px);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 576px) and (max-width: 767px) {
+}
+@media (min-width: 200px) and (max-width: 575px) {
+} */
