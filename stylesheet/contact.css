@@ -1,10 +1,102 @@
 @import url(../stylesheet/style.css);
 
 .header {
-  /* background-color: var(--surface-primary); */
-  background: no-repeat center/100% ;
+  background: no-repeat center/100%;
   object-fit: cover;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(
+      350deg,
+      rgba(13, 98, 7, 0.552),
+      rgba(72, 75, 229, 0.399)
+    ),
     no-repeat top/100% url(../Resources/contact_us.jpg);
   background-size: contain;
+}
+/* GET IN TOUCH FORM  */
+.getInTouch {
+  width: 80vw;
+  border: 1px solid var(--surface-primary);
+  border-radius: 8px;
+  padding: 60px 35px;
+  margin: 80px auto;
+  background-color: var(--text-secondary-white-light);
+  margin-top: -200px;
+  z-index: 999;
+  position: relative;
+  box-shadow: 5px 6px 16px #878787ad;
+}
+.heading {
+  margin-bottom: 20px;
+}
+.heading > h2 {
+  text-align: center;
+  color: var(--surface-primary);
+  font-size: 1.4rem;
+  font-family: serif;
+}
+.heading > h2 > span {
+  border-bottom: 2px solid var(--surface-primary);
+}
+.getInTouch_body {
+  display: flex;
+  justify-content: flex-start;
+  gap: 75px;
+}
+.getInTouch_body > form {
+  width: 50%;
+}
+.contact_form {
+  display: grid;
+  gap: 10px;
+}
+.form_title {
+  margin: 10px 0;
+}
+.form_title > h5 {
+  font-size: 1.2rem;
+  font-family: "Noto serif", sans-serif;
+  font-weight: 600;
+}
+.contact_form > input,
+.contact_form > textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--surface-primary);
+  background-color: var(--text-primary-white);
+  color: var(--text-primary-black);
+  margin-bottom: 10px;
+  font-family: "Roboto slab", sans-serif;
+}
+.contact_form > input[type="button"] {
+  background-color: var(--surface-primary);
+  color: var(--text-primary-white);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.contact_form input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 1px solid var(--surface-primary);
+}
+.contact_form > input[type="button"]:hover {
+  background-color: var(--surface-primary-hover);
+}
+.contact_address {
+  width: 32%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form_info_data i {
+  color: var(--surface-primary);
+}
+.form_info_data p {
+  color: var(--text-primary-black);
+}
+.links {
+  /* margin-top: 10px; */
+}
+.links a {
+  background-color: var(--text-primary-white);
+  border: 1px solid var(--surface-primary);
 }
