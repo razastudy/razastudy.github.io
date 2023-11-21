@@ -66,7 +66,7 @@
   margin-bottom: 10px;
   font-family: "Roboto slab", sans-serif;
 }
-.contact_form > input[type="button"] {
+.contact_form > input[type="submit"] {
   background-color: var(--surface-primary);
   color: var(--text-primary-white);
   font-size: 1.1rem;
@@ -99,4 +99,73 @@ textarea:focus {
 .links a {
   background-color: var(--text-primary-white);
   border: 1px solid var(--surface-primary);
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .getInTouch {
+    margin-top: -140px;
+  }
+  .getInTouch_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .getInTouch_body > form,
+  .contact_address {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .getInTouch {
+    margin-top: -70px;
+  }
+  .getInTouch_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .getInTouch_body > form,
+  .contact_address {
+    width: 100%;
+  }
+  .form_info_data {
+    display: none;
+  }
+  .contact_form > input[type="submit"] {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 200px) and (max-width: 575px) {
+  .header {
+    padding: 35px 40px 0;
+    height: 370px;
+  }
+  .getInTouch {
+    margin-top: -70px;
+    margin-bottom: 40px;
+    width: 100vw;
+  }
+  .getInTouch_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .getInTouch_body > form,
+  .contact_address {
+    width: 100%;
+  }
+  .contact_address {
+    display: none;
+  }
+  .contact_form > input[type="submit"] {
+    font-size: 1rem;
+  }
 }
