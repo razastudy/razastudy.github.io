@@ -108,10 +108,10 @@ a:hover {
   display: flex;
   gap: 2rem;
 }
-.navbar ul li {
+/* .navbar ul li {
   background-color: var(--surface-primary);
   border-bottom: 1px solid var(--text-primary-white);
-}
+} */
 .navbar .toggle_btn {
   color: var(--text-primary-white);
   cursor: pointer;
@@ -124,7 +124,7 @@ a:hover {
 .dropdown_menu {
   display: none;
   position: absolute;
-  right: 2rem;
+  right: 4rem;
   top: 75px;
   width: 300px;
   height: 0;
@@ -135,15 +135,24 @@ a:hover {
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open {
-  height: 210px;
+  height: 224px;
 }
 .dropdown_menu li {
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--surface-primary);
-  border-bottom: 1px solid var(--text-primary-white);
+  border-bottom: 1px solid #000000;
+  background-color: #ffffffa3;
+}
+.dropdown_menu li a{
+  font-family: 'Noto serif', sans-serif;
+  font-weight: 500;
+  color: var(--text-primary-black);
+}
+.dropdown_active{
+  color: var(--black);
+  background-color: var(--surface-primary-yellow) !important;
 }
 
 @media (max-width: 993px) {
@@ -360,7 +369,7 @@ a:hover {
 
 .right {
   width: 60%;
-  display: none;
+  display: block;
 }
 .model {
   position: relative;
@@ -960,7 +969,7 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 .links > a:nth-child(3) i {
-  color: var(--black-color);
+  color: var(--black);
 }
 .links > a:nth-child(4) i {
   color: #cd201f;
@@ -1124,7 +1133,6 @@ a:hover {
   .custom-shape-divider-bottom-1699952607 svg {
     height: 80px;
   }
-
   .info,
   .demo {
     width: 130px;
@@ -1318,9 +1326,12 @@ a:hover {
     align-items: flex-start;
   }
 
+  .right{
+    display: none;
+  }
   .left {
     margin-top: 80px;
-    width: 45%;
+    width: 60%;
   }
   .left > h1,
   .title > h2 {
@@ -1610,10 +1621,12 @@ a:hover {
   .content {
     align-items: flex-start;
   }
-
+  .right{
+    display: none;
+  }
   .left {
     margin-top: 70px;
-    width: 45%;
+    width: 65%;
   }
   .left > h1,
   .title > h2 {
