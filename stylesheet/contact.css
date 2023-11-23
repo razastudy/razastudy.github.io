@@ -93,9 +93,7 @@ textarea:focus {
 .form_info_data p {
   color: var(--text-primary-black);
 }
-.links {
-  /* margin-top: 10px; */
-}
+
 .links a {
   background-color: var(--text-primary-white);
   border: 1px solid var(--surface-primary);
@@ -104,6 +102,12 @@ textarea:focus {
 @media (min-width: 993px) and (max-width: 1200px) {
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .faculty_overlay > h2 {
+    font-size: 2rem;
+  }
+  .faculty_overlay > p {
+    font-size: 1.1rem;
+  }
   .getInTouch {
     margin-top: -140px;
   }
@@ -120,6 +124,12 @@ textarea:focus {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .faculty_overlay > h2 {
+    font-size: 1.5rem;
+  }
+  .faculty_overlay > p {
+    font-size: 0.85rem;
+  }
   .getInTouch {
     margin-top: -70px;
   }
@@ -142,6 +152,13 @@ textarea:focus {
   }
 }
 @media (min-width: 200px) and (max-width: 575px) {
+  .faculty_overlay > h2 {
+    font-size: 1.3rem;
+  }
+  .faculty_overlay > p {
+    font-size: 0.75rem;
+    width: 100%;
+  }
   .header {
     padding: 35px 40px 0;
     height: 370px;
