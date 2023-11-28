@@ -8,3 +8,13 @@ toggleBtn.onclick = function () {
 
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
+
+// Redirecting to MOREINFO PAGE 
+function moreinfo() {
+  window.location.href = "/Pages/moreinfo";
+}
+// Redirecting to DEMO PAGE 
+function demo() {
+  window.location.href = "/Pages/demo";
+}
+
