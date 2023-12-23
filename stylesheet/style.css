@@ -145,12 +145,12 @@ a:hover {
   border-bottom: 1px solid #000000;
   background-color: #ffffffa3;
 }
-.dropdown_menu li a{
-  font-family: 'Noto serif', sans-serif;
+.dropdown_menu li a {
+  font-family: "Noto serif", sans-serif;
   font-weight: 500;
   color: var(--text-primary-black);
 }
-.dropdown_active{
+.dropdown_active {
   color: var(--black);
   background-color: var(--surface-primary-yellow) !important;
 }
@@ -380,8 +380,8 @@ a:hover {
 .model > img {
   position: absolute;
   top: 40px;
-  right: 0;
-  width: 600px;
+  right: 50px;
+  width: 472px;
 }
 
 .scrolling {
@@ -465,6 +465,7 @@ a:hover {
   margin: 8px 0 4px 0;
   padding: 5px 0;
   font-family: "Noto serif", serif;
+  text-align: center;
 }
 .box > p {
   font-size: 13px;
@@ -1002,8 +1003,8 @@ a:hover {
     padding: 35px 100px 0 100px;
   }
   .model > img {
-    width: 550px;
-    left: 57px;
+    width: 435px;
+    left: 110px;
   }
   .bg > svg {
     margin-left: 200px;
@@ -1101,8 +1102,8 @@ a:hover {
     height: 560px;
   }
   .model > img {
-    width: 500px;
-    left: 57px;
+    width: 408px;
+    left: 100px;
   }
   .bg > svg {
     margin-left: 200px;
@@ -1197,10 +1198,6 @@ a:hover {
   .box {
     width: 250px;
     padding: 20px;
-  }
-  .box > h6 {
-    font-size: 16px;
-    text-align: center;
   }
 
   .body {
@@ -1326,7 +1323,7 @@ a:hover {
     align-items: flex-start;
   }
 
-  .right{
+  .right {
     display: none;
   }
   .left {
@@ -1417,10 +1414,6 @@ a:hover {
   .box {
     width: 245px;
     padding: 16px;
-  }
-  .box > h6 {
-    font-size: 16px;
-    text-align: center;
   }
 
   .body {
@@ -1621,7 +1614,7 @@ a:hover {
   .content {
     align-items: flex-start;
   }
-  .right{
+  .right {
     display: none;
   }
   .left {
@@ -1722,7 +1715,6 @@ a:hover {
   }
   .box > h6 {
     font-size: 14px;
-    text-align: center;
   }
   .box > p {
     overflow: hidden;
@@ -2080,7 +2072,6 @@ a:hover {
   }
   .box > h6 {
     font-size: 14px;
-    text-align: center;
   }
   .box > p {
     overflow: hidden;
