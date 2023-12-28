@@ -3,8 +3,8 @@
 
 .header {
   object-fit: cover;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    no-repeat center/100% url(../Resources/gallery.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    no-repeat center/100% url(../Resources/gallery/img2.jpg);
   background-size: cover;
   height: 800px;
 }

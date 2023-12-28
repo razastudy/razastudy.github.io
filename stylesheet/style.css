@@ -17,6 +17,7 @@
 
   --surface-primary-hover: #4649e5f2; /* #600 */
   --text-secondary-white-light: #f6f6f6; /* #100 */
+  --border-radius-light: #d9d9d9;
 
   --gray-50: #f7f8f8;
   --gray-100: #edeef1;
@@ -396,7 +397,7 @@ a:hover {
 
 /* REASON  */
 .sec_spacing {
-  margin: 80px 100px;
+  padding: 80px 100px;
 }
 .title > h2 {
   text-align: center;
@@ -449,6 +450,7 @@ a:hover {
   text-align: justify;
   padding: 30px;
   border-radius: 4px;
+  border: 1px solid var(--border-radius-light);
 }
 .box > i {
   display: flex;
@@ -500,15 +502,20 @@ a:hover {
   font-weight: 500;
   border: 1px solid var(--surface-primary);
   transition: 0.2s;
+  cursor: pointer;
+  transition: transform 0.8s;
 }
 .readmore_btn:hover {
   border: 1px solid var(--surface-primary);
   background-color: var(--text-primary-white);
   color: var(--surface-primary);
-  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* OUR COURSES  */
+.courses,.gallery{
+  background-color: var(--gray-50);
+}
 .head {
   margin-bottom: 25px;
 }
@@ -524,7 +531,7 @@ a:hover {
   border: 1px solid var(--surface-primary);
   border-radius: 8px;
   padding: 10px;
-  background-color: var(--gray-100);
+  background-color: var(--text-primary-white);
   /* height: 500px; */
   box-shadow: 10px 10px 25px 0px var(--box-shadow-primary-color);
   -webkit-box-shadow: 5px 5px 13px 2px var(--box-shadow-primary-color);
@@ -532,13 +539,13 @@ a:hover {
 }
 .frame > img {
   width: 100%;
-  height: 250px;
+  height: 170px;
   object-fit: contain;
 }
 .frame > h6 {
   font-size: 18px;
   font-weight: 600;
-  text-align: start;
+  text-align: center;
   margin: 5px 0;
   padding: 10px 0 5px 0;
   font-family: "Noto Serif", sans-serif;
@@ -553,6 +560,9 @@ a:hover {
 .courses_btn {
   margin: 16px auto;
   width: 100%;
+}
+.courses_btn:hover{
+  background-color: var(--gray-100);
 }
 
 /* CURIOUS TO KNOW  */
@@ -591,26 +601,35 @@ a:hover {
 .bigger {
   width: 350px;
   height: 210px;
+  padding: 10px;
   background-color: var(--text-primary-white);
   color: var(--text-primary-black);
-  border-radius: 4px;
+  border-radius: 10px;
+}
+.bigger > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .combine {
   display: grid;
   gap: 50px;
   margin-left: -30px;
 }
-.top {
-  width: 262px;
-  height: 140px;
-  background-color: var(--blue-400);
-  border-radius: 4px;
-}
+.top,
 .bottom {
   width: 262px;
   height: 140px;
-  background-color: var(--blue-400);
-  border-radius: 4px;
+  background-color: var(--text-primary-white);
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid var(--surface-primary);
+}
+.top > img,
+.bottom > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* OUT TOP RANKERS  */
@@ -634,6 +653,7 @@ a:hover {
   border-radius: 50%;
   border: 1px solid var(--surface-primary);
   background-color: var(--text-secondary-white);
+  object-fit: contain;
 }
 .user_percentage {
   display: flex;
@@ -669,11 +689,17 @@ a:hover {
   color: var(--text-secondary-black);
 }
 /* ADMISSION  */
+.admission{
+  /* display: none; */
+}
 .admission_content {
   display: flex;
   justify-content: space-around;
   gap: 140px;
 }
+/* .courseBody{
+  background-color: #000;
+} */
 .course_body {
   width: 40%;
   display: grid;
@@ -752,12 +778,17 @@ a:hover {
   width: 170px;
   height: 180px;
   border: 1px solid var(--blue-400);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 .image > img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+.image img:hover{
+  transform: scale(1.15);
 }
 /* INSTRUCTOR */
 .instuctor {
@@ -800,12 +831,13 @@ a:hover {
 .img_details > img {
   position: absolute;
   top: 21%;
-  object-fit: cover;
+  object-fit: contain;
   height: 128px;
   width: 128px;
   border-radius: 50%;
   border: 1px solid var(--surface-primary);
   left: 17%;
+  background-color: #cf3a64;
 }
 .feedback_desc_body {
   width: 45%;
@@ -955,24 +987,6 @@ a:hover {
   background-color: #e0e0e0cf;
 }
 .links > a:nth-child(1) i {
-  background-clip: text;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-
-  /* needed for browser support */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.links > a:nth-child(3) i {
-  color: var(--black);
-}
-.links > a:nth-child(4) i {
   color: #cd201f;
 }
 .social {
@@ -997,7 +1011,7 @@ a:hover {
 /* LARGE DESKTOP */
 @media (min-width: 1201px) and (max-width: 1400px) {
   .sec_spacing {
-    margin: 80px 90px;
+    padding: 80px 90px;
   }
   .header {
     padding: 35px 100px 0 100px;
@@ -1034,6 +1048,10 @@ a:hover {
   .total_students {
     width: 130px;
     height: 131px;
+  }
+  .desc > p {
+    width: 40%;
+    margin: 0 auto;
   }
   .box {
     width: 250px;
@@ -1095,7 +1113,7 @@ a:hover {
 /* DESKTOP  */
 @media (min-width: 993px) and (max-width: 1200px) {
   .sec_spacing {
-    margin: 70px 90px;
+    padding: 70px 90px;
   }
   .header {
     padding: 35px 80px 0 80px;
@@ -1295,7 +1313,7 @@ a:hover {
 /* TABLET  BIG SCREEN*/
 @media (min-width: 768px) and (max-width: 992px) {
   .sec_spacing {
-    margin: 60px;
+    padding: 60px;
   }
   .header {
     padding: 35px 60px 0;
@@ -1587,7 +1605,7 @@ a:hover {
 /* TABLET SMALL SCREEN  */
 @media (min-width: 576px) and (max-width: 767px) {
   .sec_spacing {
-    margin: 55px;
+    padding: 55px;
   }
   .header {
     padding: 35px 45px 0;
@@ -1936,7 +1954,7 @@ a:hover {
 /* PHONE  */
 @media (min-width: 200px) and (max-width: 575px) {
   .sec_spacing {
-    margin: 40px;
+    padding: 40px;
   }
   .header {
     padding: 35px 40px 0;

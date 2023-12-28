@@ -2,7 +2,7 @@
 @import url(courses.css);
 .header {
   object-fit: cover;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     no-repeat center/100% url(../Resources/faculty.jpg);
   background-size: cover;
 }
