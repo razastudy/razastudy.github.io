@@ -11,10 +11,10 @@ toggleBtn.onclick = function () {
 
 // Redirecting to MOREINFO PAGE 
 function moreinfo() {
-  window.location.href = "Pages/moreinfo";
+  window.location.href = "/Pages/moreinfo";
 }
 // Redirecting to DEMO PAGE 
 function demo() {
-  window.location.href = "Pages/demo";
+  window.location.href = "/Pages/demo";
 }
 
